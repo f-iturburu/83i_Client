@@ -88,6 +88,7 @@ export const Admin = () => {
     console.log(data);
     setCreateProductLoading(true);
 
+    
     try {
       const res = await axios.post(`${BASE_URL}/product`, data, {
         headers: {
